@@ -1,0 +1,114 @@
+{
+  "main": {
+    "key": "billing",
+    "label": "Facturación",
+    "icon": "file",
+    "items": [
+      {
+        "key": "billing-sale-list",
+        "label": "Ventas",
+        "icon": "file",
+        "routerLink": "/app/billing/sale/list",
+        "policyIdentifier": "billing.sale.view"
+      },
+      {
+        "key": "billing-document-list",
+        "label": "Comprobantes",
+        "icon": "file",
+        "routerLink": "/app/billing/document/list",
+        "policyIdentifier": "billing.document.view"
+      },
+      {
+        "key": "billing-receipt-list",
+        "label": "Cobros",
+        "icon": "file",
+        "routerLink": "/app/billing/receipt/list",
+        "policyIdentifier": "billing.receipt.view"
+      },
+      {
+        "key": "billing-receivables",
+        "label": "Cuentas por cobrar",
+        "icon": "file",
+        "routerLink": "/app/billing/receivables",
+        "policyIdentifier": "billing.document.view"
+      },
+      {
+        "key": "billing-issuer-list",
+        "label": "Emisores",
+        "icon": "file",
+        "routerLink": "/app/billing/issuer/list",
+        "policyIdentifier": "billing.issuer.view"
+      },
+      {
+        "key": "billing-operation-list",
+        "label": "Operaciones",
+        "icon": "file",
+        "routerLink": "/app/billing/operation/list",
+        "policyIdentifier": "billing.operation.view"
+      },
+      {
+        "key": "billing-audit-list",
+        "label": "Bitácora",
+        "icon": "file",
+        "routerLink": "/app/billing/audit/list",
+        "policyIdentifier": "billing.audit.view"
+      },
+      {
+        "key": "billing-cancellations",
+        "label": "Solicitudes de cancelación",
+        "icon": "file",
+        "routerLink": "/app/billing/cancellations",
+        "policyIdentifier": "billing.issuer.view"
+      },
+      {
+        "key": "billing-reports",
+        "label": "Reportes",
+        "icon": "file",
+        "routerLink": "/app/billing/reports",
+        "policyIdentifier": "billing.document.view"
+      },
+      {
+        "key": "billing-pac",
+        "label": "Configuración del PAC",
+        "icon": "cog",
+        "routerLink": "/app/billing/pac",
+        "policyIdentifier": "billing.pac.view"
+      },
+      {
+        "key": "billing-expense-list",
+        "label": "Gastos",
+        "icon": "file",
+        "routerLink": "/app/billing/expense/list",
+        "policyIdentifier": "billing.expense.view"
+      },
+      {
+        "key": "billing-expense-payment-list",
+        "label": "Pagos a proveedores",
+        "icon": "file",
+        "routerLink": "/app/billing/expense-payment/list",
+        "policyIdentifier": "billing.expense-payment.view"
+      },
+      {
+        "key": "billing-payables",
+        "label": "Cuentas por pagar",
+        "icon": "file",
+        "routerLink": "/app/billing/payables",
+        "policyIdentifier": "billing.expense.view"
+      },
+      {
+        "key": "billing-expense-category-list",
+        "label": "Categorías de gastos",
+        "icon": "cog",
+        "routerLink": "/app/billing/settings/expense-category/list",
+        "policyIdentifier": "billing.expense-category.view"
+      },
+      {
+        "key": "billing-cost-center-list",
+        "label": "Centros de costo",
+        "icon": "cog",
+        "routerLink": "/app/billing/settings/cost-center/list",
+        "policyIdentifier": "billing.cost-center.view"
+      }
+    ]
+  }
+}

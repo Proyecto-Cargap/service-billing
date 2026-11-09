@@ -1,0 +1,148 @@
+{
+  "type"                 : "object",
+  "properties"           : {
+    "issuerCode"     : {
+      "type"      : "string",
+      "maxLength" : 100,
+      "minLength" : 1
+    },
+    "supplierCode"   : {
+      "type"      : "string",
+      "maxLength" : 100,
+      "minLength" : 1
+    },
+    "categoryCode"   : {
+      "type"      : "string",
+      "maxLength" : 100,
+      "minLength" : 1
+    },
+    "costCenterCode" : {
+      "type"      : "string",
+      "maxLength" : 100,
+      "minLength" : 1
+    },
+    "projectCode"    : {
+      "type"      : "string",
+      "maxLength" : 100,
+      "minLength" : 0
+    },
+    "description"    : {
+      "type"      : "string",
+      "maxLength" : 1000,
+      "minLength" : 1
+    },
+    "date"           : {
+      "type"      : "string",
+      "maxLength" : 19,
+      "pattern"   : "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}$"
+    },
+    "dueDate"        : {
+      "type"      : "string",
+      "pattern"   : "^(|[0-9]{4}-[0-9]{2}-[0-9]{2})$",
+      "maxLength" : 10
+    },
+    "currency"       : {
+      "type"      : "string",
+      "maxLength" : 3,
+      "minLength" : 3
+    },
+    "exchangeRate"   : {
+      "type"      : "string",
+      "maxLength" : 30,
+      "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+    },
+    "lines"          : {
+      "type"     : "array",
+      "items"    : {
+        "type"                 : "object",
+        "properties"           : {
+          "description"    : {
+            "type"      : "string",
+            "maxLength" : 1000,
+            "minLength" : 1
+          },
+          "productService" : {
+            "type"      : "string",
+            "maxLength" : 8
+          },
+          "unit"           : {
+            "type"      : "string",
+            "maxLength" : 10
+          },
+          "unitName"       : {
+            "type"      : "string",
+            "maxLength" : 100
+          },
+          "quantity"       : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "unitPrice"      : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "discount"       : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "taxObject"      : {
+            "type"      : "string",
+            "maxLength" : 2
+          },
+          "taxes"          : {
+            "type"     : "array",
+            "items"    : {
+              "type"                 : "object",
+              "properties"           : {
+                "kind"   : {
+                  "type" : "string",
+                  "enum" : ["transferred", "withheld"]
+                },
+                "code"   : {
+                  "type" : "string",
+                  "enum" : ["001", "002", "003"]
+                },
+                "factor" : {
+                  "type" : "string",
+                  "enum" : ["Tasa", "Cuota", "Exento"]
+                },
+                "rate"   : {
+                  "type"      : "string",
+                  "maxLength" : 30,
+                  "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+                }
+              },
+              "required"             : ["kind", "code", "factor"],
+              "additionalProperties" : false
+            },
+            "maxItems" : 12
+          }
+        },
+        "required"             : ["description", "quantity", "unitPrice", "taxes"],
+        "additionalProperties" : false
+      },
+      "maxItems" : 500,
+      "minItems" : 1
+    },
+    "notes"          : {
+      "type"      : "string",
+      "maxLength" : 2000,
+      "minLength" : 0
+    }
+  },
+  "required"             : [
+    "issuerCode",
+    "supplierCode",
+    "categoryCode",
+    "costCenterCode",
+    "description",
+    "date",
+    "currency",
+    "exchangeRate",
+    "lines"
+  ],
+  "additionalProperties" : false
+}

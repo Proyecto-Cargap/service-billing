@@ -1,0 +1,14 @@
+{
+  "name"         : "technical-messaging",
+  "version"      : "2.6.3",
+  "description"  : "Portable CommonJS messaging runtime with explicit application dependencies",
+  "main"         : "index.js",
+  "type"         : "commonjs",
+  "license"      : "ISC",
+  "engines"      : {
+    "node" : ">=24 <25"
+  },
+  "dependencies" : {
+    "amqplib" : "2.0.1"
+  }
+}

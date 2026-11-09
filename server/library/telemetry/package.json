@@ -1,0 +1,29 @@
+{
+  "name"         : "technical-telemetry",
+  "version"      : "2.2.1",
+  "description"  : "Standalone technical observability for Node.js applications",
+  "main"         : "index.js",
+  "type"         : "commonjs",
+  "engines"      : {
+    "node" : ">=20.6.0"
+  },
+  "dependencies" : {
+    "@opentelemetry/api"                          : "1.9.1",
+    "@opentelemetry/api-logs"                     : "0.222.0",
+    "@opentelemetry/core"                         : "2.11.0",
+    "@opentelemetry/exporter-logs-otlp-proto"     : "0.222.0",
+    "@opentelemetry/exporter-metrics-otlp-proto"  : "0.222.0",
+    "@opentelemetry/exporter-trace-otlp-proto"    : "0.222.0",
+    "@opentelemetry/instrumentation-amqplib"      : "0.69.0",
+    "@opentelemetry/instrumentation-aws-sdk"      : "0.77.0",
+    "@opentelemetry/instrumentation-express"      : "0.70.0",
+    "@opentelemetry/instrumentation-http"         : "0.222.0",
+    "@opentelemetry/instrumentation-mongodb"      : "0.75.0",
+    "@opentelemetry/instrumentation-runtime-node" : "0.35.0",
+    "@opentelemetry/resources"                    : "2.11.0",
+    "@opentelemetry/sdk-logs"                     : "0.222.0",
+    "@opentelemetry/sdk-metrics"                  : "2.11.0",
+    "@opentelemetry/sdk-node"                     : "0.222.0",
+    "@opentelemetry/sdk-trace"                    : "2.11.0"
+  }
+}

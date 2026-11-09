@@ -1,0 +1,10 @@
+name: Deploy
+on:
+  push:
+    branches: [test, main]
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  deploy:
+    uses: X-ORG0008-CARGAP/infrastructure/.github/workflows/deploy-application.yml@7b25c0f091db541086467c736a63f5b8e94c53ae

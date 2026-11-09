@@ -1,0 +1,94 @@
+{
+  "type"                 : "object",
+  "properties"           : {
+    "issuerCode"     : {
+      "type"      : "string",
+      "maxLength" : 100
+    },
+    "customerCode"   : {
+      "type"      : "string",
+      "maxLength" : 100
+    },
+    "currency"       : {
+      "type"      : "string",
+      "maxLength" : 3
+    },
+    "exchangeRate"   : {
+      "type"      : "string",
+      "maxLength" : 30,
+      "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+    },
+    "amount"         : {
+      "type"      : "string",
+      "maxLength" : 30,
+      "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+    },
+    "date"           : {
+      "type"      : "string",
+      "maxLength" : 19,
+      "pattern"   : "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}$"
+    },
+    "paymentForm"    : {
+      "type"      : "string",
+      "maxLength" : 2
+    },
+    "reference"      : {
+      "type"      : "string",
+      "maxLength" : 100
+    },
+    "allocations"    : {
+      "type"     : "array",
+      "items"    : {
+        "type"                 : "object",
+        "properties"           : {
+          "documentCode" : {
+            "type"      : "string",
+            "maxLength" : 100
+          },
+          "amount"       : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "equivalence"  : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "saleCode"     : {
+            "type"      : "string",
+            "maxLength" : 100
+          }
+        },
+        "required"             : ["amount", "equivalence"],
+        "additionalProperties" : false,
+        "oneOf"                : [
+          {
+            "required" : ["documentCode"]
+          },
+          {
+            "required" : ["saleCode"]
+          }
+        ]
+      },
+      "maxItems" : 100
+    },
+    "idempotencyKey" : {
+      "type"      : "string",
+      "maxLength" : 100
+    }
+  },
+  "required"             : [
+    "issuerCode",
+    "customerCode",
+    "currency",
+    "exchangeRate",
+    "amount",
+    "date",
+    "paymentForm",
+    "reference",
+    "allocations",
+    "idempotencyKey"
+  ],
+  "additionalProperties" : false
+}

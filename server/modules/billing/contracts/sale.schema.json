@@ -1,0 +1,175 @@
+{
+  "type"                 : "object",
+  "properties"           : {
+    "issuerCode"       : {
+      "type"      : "string",
+      "maxLength" : 100
+    },
+    "customerCode"     : {
+      "type"      : "string",
+      "maxLength" : 100
+    },
+    "currency"         : {
+      "type"      : "string",
+      "maxLength" : 3
+    },
+    "exchangeRate"     : {
+      "type"      : "string",
+      "maxLength" : 30,
+      "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+    },
+    "date"             : {
+      "type"      : "string",
+      "maxLength" : 19,
+      "pattern"   : "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}$"
+    },
+    "lines"            : {
+      "type"     : "array",
+      "items"    : {
+        "type"                 : "object",
+        "properties"           : {
+          "description"      : {
+            "type"      : "string",
+            "maxLength" : 1000
+          },
+          "productService"   : {
+            "type"      : "string",
+            "maxLength" : 8
+          },
+          "unit"             : {
+            "type"      : "string",
+            "maxLength" : 10
+          },
+          "unitName"         : {
+            "type"      : "string",
+            "maxLength" : 100
+          },
+          "quantity"         : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "unitPrice"        : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "discount"         : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "taxObject"        : {
+            "type"      : "string",
+            "maxLength" : 2
+          },
+          "taxes"            : {
+            "type"     : "array",
+            "items"    : {
+              "type"                 : "object",
+              "properties"           : {
+                "kind"   : {
+                  "type" : "string",
+                  "enum" : ["transferred", "withheld"]
+                },
+                "code"   : {
+                  "type" : "string",
+                  "enum" : ["001", "002", "003"]
+                },
+                "factor" : {
+                  "type" : "string",
+                  "enum" : ["Tasa", "Cuota", "Exento"]
+                },
+                "rate"   : {
+                  "type"      : "string",
+                  "maxLength" : 30,
+                  "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+                }
+              },
+              "required"             : ["kind", "code", "factor"],
+              "additionalProperties" : false
+            },
+            "maxItems" : 12
+          },
+          "catalogReference" : {
+            "type"                 : "object",
+            "properties"           : {
+              "itemCode"      : {
+                "type"      : "string",
+                "minLength" : 1,
+                "maxLength" : 100
+              },
+              "skuCode"       : {
+                "type"      : "string",
+                "minLength" : 1,
+                "maxLength" : 100
+              },
+              "priceListCode" : {
+                "type"      : "string",
+                "minLength" : 1,
+                "maxLength" : 100
+              },
+              "itemRevision"  : {
+                "type"    : "integer",
+                "minimum" : 1
+              },
+              "skuRevision"   : {
+                "type"    : "integer",
+                "minimum" : 1
+              },
+              "priceCode"     : {
+                "type"      : "string",
+                "minLength" : 1,
+                "maxLength" : 100
+              },
+              "priceRevision" : {
+                "type"    : "integer",
+                "minimum" : 1
+              }
+            },
+            "required"             : [
+              "itemCode",
+              "skuCode",
+              "priceListCode",
+              "itemRevision",
+              "skuRevision",
+              "priceCode",
+              "priceRevision"
+            ],
+            "additionalProperties" : false
+          }
+        },
+        "required"             : [
+          "description",
+          "productService",
+          "unit",
+          "quantity",
+          "unitPrice",
+          "taxObject",
+          "taxes"
+        ],
+        "additionalProperties" : false
+      },
+      "maxItems" : 500,
+      "minItems" : 1
+    },
+    "notes"            : {
+      "type"      : "string",
+      "maxLength" : 2000
+    },
+    "invoiceRequested" : {
+      "type" : "boolean"
+    }
+  },
+  "required"             : [
+    "issuerCode",
+    "customerCode",
+    "currency",
+    "exchangeRate",
+    "date",
+    "lines",
+    "notes",
+    "invoiceRequested"
+  ],
+  "additionalProperties" : false
+}

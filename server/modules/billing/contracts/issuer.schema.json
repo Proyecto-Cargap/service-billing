@@ -1,0 +1,70 @@
+{
+  "type"                 : "object",
+  "properties"           : {
+    "name"       : {
+      "type"      : "string",
+      "maxLength" : 100
+    },
+    "taxId"      : {
+      "type"      : "string",
+      "maxLength" : 13,
+      "pattern"   : "^[A-ZÑ&]{3,4}\\d{6}[A-Z0-9]{3}$"
+    },
+    "legalName"  : {
+      "type"      : "string",
+      "maxLength" : 254
+    },
+    "taxRegime"  : {
+      "type"      : "string",
+      "maxLength" : 3
+    },
+    "postalCode" : {
+      "type"      : "string",
+      "maxLength" : 5,
+      "pattern"   : "^\\d{5}$"
+    },
+    "series"     : {
+      "type"                 : "object",
+      "properties"           : {
+        "I" : {
+          "type"      : "string",
+          "maxLength" : 25,
+          "pattern"   : "^[A-Za-z0-9-]{1,25}$"
+        },
+        "E" : {
+          "type"      : "string",
+          "maxLength" : 25,
+          "pattern"   : "^[A-Za-z0-9-]{1,25}$"
+        },
+        "P" : {
+          "type"      : "string",
+          "maxLength" : 25,
+          "pattern"   : "^[A-Za-z0-9-]{1,25}$"
+        }
+      },
+      "required"             : ["I", "E", "P"],
+      "additionalProperties" : false
+    },
+    "active"     : {
+      "type" : "boolean"
+    },
+    "workspace"  : {
+      "type"        : "string",
+      "minLength"   : 1,
+      "maxLength"   : 100,
+      "pattern"     : "^\\S+$",
+      "description" : "Workspace autorizado o allWorkspaces para compartir el emisor."
+    }
+  },
+  "required"             : [
+    "name",
+    "taxId",
+    "legalName",
+    "taxRegime",
+    "postalCode",
+    "series",
+    "active",
+    "workspace"
+  ],
+  "additionalProperties" : false
+}

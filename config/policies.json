@@ -1,0 +1,1090 @@
+[
+  {
+    "identifier": "billing.issuer.view.global",
+    "service": "billing",
+    "section": "issuer",
+    "description": "Consultar issuer (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.issuer.view.workspace",
+    "service": "billing",
+    "section": "issuer",
+    "description": "Consultar issuer (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.issuer.create.global",
+    "service": "billing",
+    "section": "issuer",
+    "description": "Crear o solicitar issuer (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.issuer.create.workspace",
+    "service": "billing",
+    "section": "issuer",
+    "description": "Crear o solicitar issuer (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.issuer.update.global",
+    "service": "billing",
+    "section": "issuer",
+    "description": "Actualizar o resolver issuer (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.issuer.update.workspace",
+    "service": "billing",
+    "section": "issuer",
+    "description": "Actualizar o resolver issuer (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.view.global",
+    "service": "billing",
+    "section": "document",
+    "description": "Consultar document (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.view.workspace",
+    "service": "billing",
+    "section": "document",
+    "description": "Consultar document (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.view.owner",
+    "service": "billing",
+    "section": "document",
+    "description": "Consultar document (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.view.assigned",
+    "service": "billing",
+    "section": "document",
+    "description": "Consultar document (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.create.global",
+    "service": "billing",
+    "section": "document",
+    "description": "Crear o solicitar document (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.create.workspace",
+    "service": "billing",
+    "section": "document",
+    "description": "Crear o solicitar document (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.create.owner",
+    "service": "billing",
+    "section": "document",
+    "description": "Crear o solicitar document (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.create.assigned",
+    "service": "billing",
+    "section": "document",
+    "description": "Crear o solicitar document (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.update.global",
+    "service": "billing",
+    "section": "document",
+    "description": "Actualizar o resolver document (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.update.workspace",
+    "service": "billing",
+    "section": "document",
+    "description": "Actualizar o resolver document (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.update.owner",
+    "service": "billing",
+    "section": "document",
+    "description": "Actualizar o resolver document (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.update.assigned",
+    "service": "billing",
+    "section": "document",
+    "description": "Actualizar o resolver document (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.view.global",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Consultar receipt (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.view.workspace",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Consultar receipt (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.view.owner",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Consultar receipt (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.view.assigned",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Consultar receipt (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.create.global",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Crear o solicitar receipt (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.create.workspace",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Crear o solicitar receipt (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.create.owner",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Crear o solicitar receipt (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.create.assigned",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Crear o solicitar receipt (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.update.global",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Actualizar o resolver receipt (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.update.workspace",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Actualizar o resolver receipt (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.update.owner",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Actualizar o resolver receipt (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.update.assigned",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Actualizar o resolver receipt (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.delete.global",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Revertir receipt (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.delete.workspace",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Revertir receipt (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.delete.owner",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Revertir receipt (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.receipt.delete.assigned",
+    "service": "billing",
+    "section": "receipt",
+    "description": "Revertir receipt (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.operation.view.global",
+    "service": "billing",
+    "section": "operation",
+    "description": "Consultar operation (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.operation.view.workspace",
+    "service": "billing",
+    "section": "operation",
+    "description": "Consultar operation (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.operation.view.owner",
+    "service": "billing",
+    "section": "operation",
+    "description": "Consultar operation (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.operation.view.assigned",
+    "service": "billing",
+    "section": "operation",
+    "description": "Consultar operation (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.operation.update.global",
+    "service": "billing",
+    "section": "operation",
+    "description": "Actualizar o resolver operation (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.operation.update.workspace",
+    "service": "billing",
+    "section": "operation",
+    "description": "Actualizar o resolver operation (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.operation.update.owner",
+    "service": "billing",
+    "section": "operation",
+    "description": "Actualizar o resolver operation (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.operation.update.assigned",
+    "service": "billing",
+    "section": "operation",
+    "description": "Actualizar o resolver operation (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.audit.view.global",
+    "service": "billing",
+    "section": "audit",
+    "description": "Consultar audit (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.audit.view.workspace",
+    "service": "billing",
+    "section": "audit",
+    "description": "Consultar audit (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.audit.view.owner",
+    "service": "billing",
+    "section": "audit",
+    "description": "Consultar audit (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.audit.view.assigned",
+    "service": "billing",
+    "section": "audit",
+    "description": "Consultar audit (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.issuance.create.global",
+    "service": "billing",
+    "section": "issuance",
+    "description": "Crear o solicitar issuance (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.issuance.create.workspace",
+    "service": "billing",
+    "section": "issuance",
+    "description": "Crear o solicitar issuance (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.issuance.create.owner",
+    "service": "billing",
+    "section": "issuance",
+    "description": "Crear o solicitar issuance (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.issuance.create.assigned",
+    "service": "billing",
+    "section": "issuance",
+    "description": "Crear o solicitar issuance (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.cancellation.create.global",
+    "service": "billing",
+    "section": "cancellation",
+    "description": "Crear o solicitar cancellation (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.cancellation.create.workspace",
+    "service": "billing",
+    "section": "cancellation",
+    "description": "Crear o solicitar cancellation (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.cancellation.create.owner",
+    "service": "billing",
+    "section": "cancellation",
+    "description": "Crear o solicitar cancellation (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.cancellation.create.assigned",
+    "service": "billing",
+    "section": "cancellation",
+    "description": "Crear o solicitar cancellation (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.delivery.create.global",
+    "service": "billing",
+    "section": "delivery",
+    "description": "Crear o solicitar delivery (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.delivery.create.workspace",
+    "service": "billing",
+    "section": "delivery",
+    "description": "Crear o solicitar delivery (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.delivery.create.owner",
+    "service": "billing",
+    "section": "delivery",
+    "description": "Crear o solicitar delivery (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.delivery.create.assigned",
+    "service": "billing",
+    "section": "delivery",
+    "description": "Crear o solicitar delivery (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.delete.global",
+    "service": "billing",
+    "section": "document",
+    "description": "Descartar borradores de comprobantes (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.delete.workspace",
+    "service": "billing",
+    "section": "document",
+    "description": "Descartar borradores de comprobantes (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.delete.owner",
+    "service": "billing",
+    "section": "document",
+    "description": "Descartar borradores de comprobantes (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.document.delete.assigned",
+    "service": "billing",
+    "section": "document",
+    "description": "Descartar borradores de comprobantes (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.pac.view.global",
+    "service": "billing",
+    "section": "pac",
+    "description": "Consultar la configuración global del PAC y sus timbres",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.pac.update.global",
+    "service": "billing",
+    "section": "pac",
+    "description": "Actualizar la cuenta y el ambiente global del PAC",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.view.global",
+    "service": "billing",
+    "section": "sale",
+    "description": "view sale (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.view.workspace",
+    "service": "billing",
+    "section": "sale",
+    "description": "view sale (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.view.owner",
+    "service": "billing",
+    "section": "sale",
+    "description": "view sale (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.view.assigned",
+    "service": "billing",
+    "section": "sale",
+    "description": "view sale (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.create.global",
+    "service": "billing",
+    "section": "sale",
+    "description": "create sale (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.create.workspace",
+    "service": "billing",
+    "section": "sale",
+    "description": "create sale (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.create.owner",
+    "service": "billing",
+    "section": "sale",
+    "description": "create sale (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.create.assigned",
+    "service": "billing",
+    "section": "sale",
+    "description": "create sale (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.update.global",
+    "service": "billing",
+    "section": "sale",
+    "description": "update sale (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.update.workspace",
+    "service": "billing",
+    "section": "sale",
+    "description": "update sale (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.update.owner",
+    "service": "billing",
+    "section": "sale",
+    "description": "update sale (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.update.assigned",
+    "service": "billing",
+    "section": "sale",
+    "description": "update sale (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.delete.global",
+    "service": "billing",
+    "section": "sale",
+    "description": "delete sale (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.delete.workspace",
+    "service": "billing",
+    "section": "sale",
+    "description": "delete sale (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.delete.owner",
+    "service": "billing",
+    "section": "sale",
+    "description": "delete sale (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale.delete.assigned",
+    "service": "billing",
+    "section": "sale",
+    "description": "delete sale (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.view.global",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "view sale-extraction (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.view.workspace",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "view sale-extraction (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.view.owner",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "view sale-extraction (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.view.assigned",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "view sale-extraction (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.create.global",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "create sale-extraction (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.create.workspace",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "create sale-extraction (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.create.owner",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "create sale-extraction (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.create.assigned",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "create sale-extraction (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.update.global",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "update sale-extraction (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.update.workspace",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "update sale-extraction (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.update.owner",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "update sale-extraction (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.update.assigned",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "update sale-extraction (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.delete.global",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "delete sale-extraction (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.delete.workspace",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "delete sale-extraction (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.delete.owner",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "delete sale-extraction (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.sale-extraction.delete.assigned",
+    "service": "billing",
+    "section": "sale-extraction",
+    "description": "delete sale-extraction (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.view.global",
+    "service": "billing",
+    "section": "expense",
+    "description": "view expense (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.view.workspace",
+    "service": "billing",
+    "section": "expense",
+    "description": "view expense (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.view.owner",
+    "service": "billing",
+    "section": "expense",
+    "description": "view expense (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.view.assigned",
+    "service": "billing",
+    "section": "expense",
+    "description": "view expense (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.create.global",
+    "service": "billing",
+    "section": "expense",
+    "description": "create expense (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.create.workspace",
+    "service": "billing",
+    "section": "expense",
+    "description": "create expense (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.create.owner",
+    "service": "billing",
+    "section": "expense",
+    "description": "create expense (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.create.assigned",
+    "service": "billing",
+    "section": "expense",
+    "description": "create expense (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.update.global",
+    "service": "billing",
+    "section": "expense",
+    "description": "update expense (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.update.workspace",
+    "service": "billing",
+    "section": "expense",
+    "description": "update expense (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.update.owner",
+    "service": "billing",
+    "section": "expense",
+    "description": "update expense (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.update.assigned",
+    "service": "billing",
+    "section": "expense",
+    "description": "update expense (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.delete.global",
+    "service": "billing",
+    "section": "expense",
+    "description": "delete expense (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.delete.workspace",
+    "service": "billing",
+    "section": "expense",
+    "description": "delete expense (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.delete.owner",
+    "service": "billing",
+    "section": "expense",
+    "description": "delete expense (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense.delete.assigned",
+    "service": "billing",
+    "section": "expense",
+    "description": "delete expense (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.view.global",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "view expense-payment (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.view.workspace",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "view expense-payment (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.view.owner",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "view expense-payment (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.view.assigned",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "view expense-payment (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.create.global",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "create expense-payment (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.create.workspace",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "create expense-payment (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.create.owner",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "create expense-payment (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.create.assigned",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "create expense-payment (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.update.global",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "update expense-payment (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.update.workspace",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "update expense-payment (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.update.owner",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "update expense-payment (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.update.assigned",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "update expense-payment (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.delete.global",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "delete expense-payment (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.delete.workspace",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "delete expense-payment (workspace)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.delete.owner",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "delete expense-payment (owner)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-payment.delete.assigned",
+    "service": "billing",
+    "section": "expense-payment",
+    "description": "delete expense-payment (assigned)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-category.view.global",
+    "service": "billing",
+    "section": "expense-category",
+    "description": "view expense-category (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-category.create.global",
+    "service": "billing",
+    "section": "expense-category",
+    "description": "create expense-category (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-category.update.global",
+    "service": "billing",
+    "section": "expense-category",
+    "description": "update expense-category (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.expense-category.delete.global",
+    "service": "billing",
+    "section": "expense-category",
+    "description": "delete expense-category (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.cost-center.view.global",
+    "service": "billing",
+    "section": "cost-center",
+    "description": "view cost-center (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.cost-center.create.global",
+    "service": "billing",
+    "section": "cost-center",
+    "description": "create cost-center (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.cost-center.update.global",
+    "service": "billing",
+    "section": "cost-center",
+    "description": "update cost-center (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  },
+  {
+    "identifier": "billing.cost-center.delete.global",
+    "service": "billing",
+    "section": "cost-center",
+    "description": "delete cost-center (global)",
+    "active": true,
+    "workspace": "allWorkspaces"
+  }
+]

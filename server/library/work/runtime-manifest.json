@@ -1,0 +1,10 @@
+{
+  "runtimeVersion" : "1.2.0",
+  "requires"       : {
+    "messaging" : "2.5.0"
+  },
+  "files"          : {
+    "reactive-worker.js" : "9def05ed2307a7ecfec7868400053b1eecd6eeda2c2563e1d248ac1a34fb0c4e",
+    "mongo-changes.js"   : "08ed13469b768d894228d1394aa6f78d978cd541415382f4e38efe65cfd8c4f9"
+  }
+}

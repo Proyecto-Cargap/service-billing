@@ -1,0 +1,226 @@
+{
+  "type"                 : "object",
+  "properties"           : {
+    "type"                : {
+      "type" : "string",
+      "enum" : ["I", "E"]
+    },
+    "issuerCode"          : {
+      "type"      : "string",
+      "maxLength" : 100
+    },
+    "customerCode"        : {
+      "type"      : "string",
+      "maxLength" : 100
+    },
+    "currency"            : {
+      "type"      : "string",
+      "maxLength" : 3
+    },
+    "exchangeRate"        : {
+      "type"      : "string",
+      "maxLength" : 30,
+      "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+    },
+    "paymentMethod"       : {
+      "type" : "string",
+      "enum" : ["PUE", "PPD"]
+    },
+    "paymentForm"         : {
+      "type"      : "string",
+      "maxLength" : 2
+    },
+    "cfdiUse"             : {
+      "type"      : "string",
+      "maxLength" : 3
+    },
+    "date"                : {
+      "type"      : "string",
+      "maxLength" : 19,
+      "pattern"   : "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}$"
+    },
+    "lines"               : {
+      "type"     : "array",
+      "items"    : {
+        "type"                 : "object",
+        "properties"           : {
+          "description"      : {
+            "type"      : "string",
+            "maxLength" : 1000
+          },
+          "productService"   : {
+            "type"      : "string",
+            "maxLength" : 8
+          },
+          "unit"             : {
+            "type"      : "string",
+            "maxLength" : 10
+          },
+          "unitName"         : {
+            "type"      : "string",
+            "maxLength" : 100
+          },
+          "quantity"         : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "unitPrice"        : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "discount"         : {
+            "type"      : "string",
+            "maxLength" : 30,
+            "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+          },
+          "taxObject"        : {
+            "type"      : "string",
+            "maxLength" : 2
+          },
+          "taxes"            : {
+            "type"     : "array",
+            "items"    : {
+              "type"                 : "object",
+              "properties"           : {
+                "kind"   : {
+                  "type" : "string",
+                  "enum" : ["transferred", "withheld"]
+                },
+                "code"   : {
+                  "type" : "string",
+                  "enum" : ["001", "002", "003"]
+                },
+                "factor" : {
+                  "type" : "string",
+                  "enum" : ["Tasa", "Cuota", "Exento"]
+                },
+                "rate"   : {
+                  "type"      : "string",
+                  "maxLength" : 30,
+                  "pattern"   : "^(0|[1-9]\\d{0,14})(\\.\\d{1,6})?$"
+                }
+              },
+              "required"             : ["kind", "code", "factor"],
+              "additionalProperties" : false
+            },
+            "maxItems" : 12
+          },
+          "catalogReference" : {
+            "type"                 : "object",
+            "properties"           : {
+              "itemCode"      : {
+                "type"      : "string",
+                "minLength" : 1,
+                "maxLength" : 100
+              },
+              "skuCode"       : {
+                "type"      : "string",
+                "minLength" : 1,
+                "maxLength" : 100
+              },
+              "priceListCode" : {
+                "type"      : "string",
+                "minLength" : 1,
+                "maxLength" : 100
+              },
+              "itemRevision"  : {
+                "type"    : "integer",
+                "minimum" : 1
+              },
+              "skuRevision"   : {
+                "type"    : "integer",
+                "minimum" : 1
+              },
+              "priceCode"     : {
+                "type"      : "string",
+                "minLength" : 1,
+                "maxLength" : 100
+              },
+              "priceRevision" : {
+                "type"    : "integer",
+                "minimum" : 1
+              }
+            },
+            "required"             : [
+              "itemCode",
+              "skuCode",
+              "priceListCode",
+              "itemRevision",
+              "skuRevision",
+              "priceCode",
+              "priceRevision"
+            ],
+            "additionalProperties" : false
+          }
+        },
+        "required"             : [
+          "description",
+          "productService",
+          "unit",
+          "quantity",
+          "unitPrice",
+          "taxObject",
+          "taxes"
+        ],
+        "additionalProperties" : false
+      },
+      "maxItems" : 500
+    },
+    "relatedDocumentCode" : {
+      "type"      : "string",
+      "maxLength" : 100
+    },
+    "relationship"        : {
+      "type"      : "string",
+      "maxLength" : 2
+    },
+    "globalInfo"          : {
+      "type"                 : "object",
+      "properties"           : {
+        "periodicity"    : {
+          "type"      : "string",
+          "maxLength" : 2
+        },
+        "month"          : {
+          "type"      : "string",
+          "maxLength" : 2
+        },
+        "year"           : {
+          "type"    : "integer",
+          "minimum" : 2022,
+          "maximum" : 2100
+        },
+        "operationCodes" : {
+          "type"     : "array",
+          "items"    : {
+            "type"      : "string",
+            "maxLength" : 100
+          },
+          "maxItems" : 500
+        }
+      },
+      "required"             : ["periodicity", "month", "year", "operationCodes"],
+      "additionalProperties" : false
+    },
+    "notes"               : {
+      "type"      : "string",
+      "maxLength" : 2000
+    }
+  },
+  "required"             : [
+    "type",
+    "issuerCode",
+    "customerCode",
+    "currency",
+    "exchangeRate",
+    "paymentMethod",
+    "paymentForm",
+    "cfdiUse",
+    "date",
+    "lines",
+    "notes"
+  ],
+  "additionalProperties" : false
+}

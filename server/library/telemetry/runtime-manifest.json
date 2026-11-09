@@ -1,0 +1,11 @@
+{
+  "name"    : "telemetry",
+  "version" : "2.2.1",
+  "sha256"  : {
+    "index.js"           : "1ed9ccdfc0cbb67bb529cb64cdde1e9c322e435b09eff6a2f6ac77dc57218c41",
+    "instrumentation.js" : "3370655644cad700a23df6c965f5dfe2b8280bd0e444c96b75d7f0ea15837d93",
+    "metrics.js"         : "4c348a145b69d679fe9b9f76687ef9791b7ee9a92a7975d48af9911ded9e1792",
+    "package.json"       : "8d2f16b936a6310505c8c87dae47a4a737e06ea801d1f5162de8474d49b1cfe0",
+    "privacy.js"         : "77f78fb41eaa060b596e37a47d4688002733f86a9762c03ac8b62bb508d4835e"
+  }
+}
